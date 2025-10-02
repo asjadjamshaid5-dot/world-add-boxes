@@ -1,8 +1,21 @@
-<!doctype html>
-<html lang="ur" dir="rtl">
-  <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>BoxesWorld App</title></head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./app.jsx"></script>
-  </body>
-</html>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBXnhBjU7QVs-MPUb8oxyfHkXFsh3EQbeM",
+  authDomain: "asjad-add-boxes.firebaseapp.com",
+  projectId: "asjad-add-boxes",
+  storageBucket: "asjad-add-boxes.firebasestorage.app",
+  messagingSenderId: "716440755091",
+  appId: "1:716440755091:web:2ee23e228d99a91d83e666",
+  measurementId: "G-3YENXRW7CM"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
